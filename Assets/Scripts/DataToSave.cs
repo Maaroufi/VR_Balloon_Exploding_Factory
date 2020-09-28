@@ -151,9 +151,9 @@ public class DataToSave : DynamoDbBase
         nameOfTheTable = "GaleaTask_" + participant_ID + "_" + dateTime;
 
         // Create table on DynamoDB
-        CreateTableListener();
+        //CreateTableListener();
         // Then Load it 10 seconds later (to give time to create the table)
-        Invoke("LoadTableListener", 10.0f);        
+        //Invoke("LoadTableListener", 10.0f);        
 
         if (participant_ID % 2 == 0)
         {
@@ -252,14 +252,6 @@ public class DataToSave : DynamoDbBase
             {
                 difficultyLevel = NewLevelDifficulty();
                 isNewLevel = false;
-            }
-            if (!updatedDB)
-            {
-                //MainThreadWait.Reset();
-                //WaitHandle.SignalAndWait(ChildThreadWait, MainThreadWait);
-
-                //ChildThreadWait.Set();
-                //updatedDB = true;
             }
         }
 
@@ -697,14 +689,6 @@ public class DataToSave : DynamoDbBase
             totalApertureAssessed = handApertureMaxAssessed - handApertureMinAssessed;
             apertureRef = totalApertureAssessed * refForAperture;
 
-            //Thread thread = new Thread(LoadAWSTable);
-            //thread.Start();
-            //StartCoroutine(LoadAWSTable());
-            //LaunchAWSWork();
-
-            //MainThreadWait.Reset();
-            //WaitHandle.SignalAndWait(ChildThreadWait, MainThreadWait);
-
             ChildThreadWait.Set();
 
             maxApertureTrigger = handApertureMaxAssessed - (totalApertureAssessed * triggerApperture);
@@ -722,18 +706,6 @@ public class DataToSave : DynamoDbBase
             ListSpeedAssessed.Clear();
             ListSpeedAssessed.TrimExcess();
             speedRef = speedApertureAssessed * refForSpeed;
-
-            //Invoke("LoadAWSTable", 10);
-            //Thread thread2 = new Thread(LoadAWSTable);
-            //thread2.Start();
-
-
-            //StartCoroutine(LoadAWSTable());
-
-            //LaunchAWSWork();
-
-            //MainThreadWait.Reset();
-            //WaitHandle.SignalAndWait(ChildThreadWait, MainThreadWait);
 
             ChildThreadWait.Set();
 
@@ -767,13 +739,9 @@ public class DataToSave : DynamoDbBase
     }
     
     void ChildThreadLoop()
-    {
-        //ChildThreadWait.Reset();
-        //ChildThreadWait.WaitOne();
-        
+    {      
         while (true)
         {
-            //ChildThreadWait.Reset();
             ChildThreadWait.WaitOne();
 
             DocumentBatchWrite documentBatchWrite = new DocumentBatchWrite(ObiTaskTable);
@@ -793,9 +761,6 @@ public class DataToSave : DynamoDbBase
 
             listOfDocuments.Clear();
             listOfDocuments.TrimExcess();
-
-            //WaitHandle.SignalAndWait(MainThreadWait, ChildThreadWait);
-            //ChildThreadWait.WaitOne();
         }
     }
 
