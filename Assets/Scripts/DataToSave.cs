@@ -9,11 +9,6 @@ using Amazon.DynamoDBv2.DocumentModel;
 using System;
 using System.Linq;
 using System.Threading;
-using Amazon.DynamoDBv2.DataModel;
-using Amazon.Runtime;
-using Amazon.SecurityToken;
-using System.Threading.Tasks;
-using Unity.Jobs;
 
 public class DataToSave : DynamoDbBase
 {
@@ -114,6 +109,7 @@ public class DataToSave : DynamoDbBase
     public static float performanceThreshold = 0.99f;
     public float performanceThresholdInstantiate;
 
+    // For multithreading. Only to write on database cloud
     Thread childThread = null;
     AutoResetEvent ChildThreadWait = new AutoResetEvent(false);
 
@@ -154,7 +150,9 @@ public class DataToSave : DynamoDbBase
 
         nameOfTheTable = "GaleaTask_" + participant_ID + "_" + dateTime;
 
+        // Create table on DynamoDB
         CreateTableListener();
+        // Then Load it 10 seconds later (to give time to create the table)
         Invoke("LoadTableListener", 10.0f);        
 
         if (participant_ID % 2 == 0)
