@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 455c56844fca724439551c17651e57af
+timeCreated: 1517183636
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: warehouse_glass
+    100004: warehouse_mesh 1
+    100006: warehouse_shadow_mesh
+    100008: warehouse_mesh1
+    100010: polySurface1
+    100012: polySurface2
+    100014: polySurface3
+    100016: polySurface3 1
+    100018: transform1
+    100020: transform2
+    100022: transform3
+    100024: warehouse_floor
+    100026: warehouse_main
+    400000: //RootNode
+    400002: warehouse_glass
+    400004: warehouse_mesh 1
+    400006: warehouse_shadow_mesh
+    400008: warehouse_mesh1
+    400010: polySurface1
+    400012: polySurface2
+    400014: polySurface3
+    400016: polySurface3 1
+    400018: transform1
+    400020: transform2
+    400022: transform3
+    400024: warehouse_floor
+    400026: warehouse_main
+    2300000: warehouse_glass
+    2300002: warehouse_mesh 1
+    2300004: warehouse_shadow_mesh
+    2300006: warehouse_mesh1
+    2300008: polySurface2
+    2300010: polySurface3
+    2300012: warehouse_floor
+    2300014: //RootNode
+    2300016: warehouse_main
+    3300000: warehouse_glass
+    3300002: warehouse_mesh 1
+    3300004: warehouse_shadow_mesh
+    3300006: warehouse_mesh1
+    3300008: polySurface2
+    3300010: polySurface3
+    3300012: warehouse_floor
+    3300014: //RootNode
+    3300016: warehouse_main
+    4300000: warehouse_shadow_mesh
+    4300002: warehouse_glass
+    4300004: warehouse_mesh
+    4300006: warehouse_mesh1
+    4300008: polySurface3
+    4300010: polySurface2
+    4300012: warehouse_floor
+    4300014: warehouse_sunrays
+    4300016: warehouse_main
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: 01468c8f9a7bddb45b651fd915a38746, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: 7d491919edd305a40a27b7c7859f417b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_warehouse_floor
+    second: {fileID: 2100000, guid: d5a2da89447a2dd499a1f8168f39d1ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_warehouse_glass
+    second: {fileID: 2100000, guid: 6854843dda5762647bc9dc2672a04763, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_warehouse_mesh
+    second: {fileID: 2100000, guid: 9475f9ad3044241459d96650a37e0a10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_warehouse_sunrays
+    second: {fileID: 2100000, guid: 76b6f0bfda7d1944a82a955103ea13cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: 59f1fcc801ff7934ab990d2878594ea4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
