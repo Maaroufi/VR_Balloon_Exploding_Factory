@@ -23,8 +23,7 @@ using Amazon;
 
     public class DynamoDbBase : MonoBehaviour
     {
-        public string IdentityPoolId = "eu-west-2:0cb348f5-382f-4219-ba89-1232274fe882";
-        //public string IdentityPoolId = "eu-west-2:96bcf83b-bc46-4b5c-a718-66fa86897498";
+        public string IdentityPoolId = "YOUR_KEY_HERE";
         public string CognitoPoolRegion = RegionEndpoint.EUWest2.SystemName;
         public string DynamoRegion = RegionEndpoint.EUWest2.SystemName;
 
