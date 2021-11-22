@@ -1,5 +1,11 @@
 # BalloonExplodingFactory
 
+Demo visible on YouTube: https://www.youtube.com/watch?v=hZCYuZxMAWY
+ <br />
+The application is downloadable on Sidequest:
+https://sidequestvr.com/app/1654/balloon-exploding-factory-beta
+ <br />
+ <br />
 ![Balloon](https://github.com/Maaroufi/BalloonExplodingFactory/blob/master/Me.jpg?raw=true)
  <br />
  <br />
